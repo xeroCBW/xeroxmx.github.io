@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="web 总结">
+<meta name="description" content="php基础语法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="html学习笔记3">
-<meta property="og:url" content="https://xeroxmx.github.io/2016/09/10/hello-world/2016/10/09/html学习笔记3/index.html">
+<meta property="og:title" content="php学习笔记01">
+<meta property="og:url" content="https://xeroxmx.github.io/2016/09/10/hello-world/2016/10/12/php学习笔记01/index.html">
 <meta property="og:site_name" content="羊小年">
-<meta property="og:description" content="web 总结">
-<meta property="og:updated_time" content="2016-10-08T16:32:31.000Z">
+<meta property="og:description" content="php基础语法">
+<meta property="og:updated_time" content="2016-10-11T16:36:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="html学习笔记3">
-<meta name="twitter:description" content="web 总结">
+<meta name="twitter:title" content="php学习笔记01">
+<meta name="twitter:description" content="php基础语法">
 
 
 
@@ -114,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="https://xeroxmx.github.io/2016/09/10/hello-world/2016/10/09/html学习笔记3/"/>
+  <link rel="canonical" href="https://xeroxmx.github.io/2016/09/10/hello-world/2016/10/12/php学习笔记01/"/>
 
-  <title> html学习笔记3 | 羊小年 </title>
+  <title> php学习笔记01 | 羊小年 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -236,7 +236,7 @@
             
             
               
-                html学习笔记3
+                php学习笔记01
               
             
           </h1>
@@ -248,8 +248,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-09T00:25:55+08:00" content="2016-10-09">
-              2016-10-09
+            <time itemprop="dateCreated" datetime="2016-10-12T00:27:12+08:00" content="2016-10-12">
+              2016-10-12
             </time>
           </span>
 
@@ -259,8 +259,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/09/html学习笔记3/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/09/html学习笔记3/" itemprop="commentsCount"></span>
+                <a href="/2016/10/12/php学习笔记01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/12/php学习笔记01/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -283,53 +283,65 @@
       
 
       
-        <h3 id="web-总结"><a href="#web-总结" class="headerlink" title="web 总结"></a>web 总结</h3><a id="more"></a>
+        <h3 id="php基础语法"><a href="#php基础语法" class="headerlink" title="php基础语法"></a>php基础语法</h3><a id="more"></a>
+<ol>
+<li><p>变量</p>
 <ul>
-<li>1.设置没有下划线</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">text-decoration: none;</div></pre></td></tr></table></figure>
-<ul>
-<li><p>2.文字居中原理:</p>
-<ul>
-<li>设置 lineHeight</li>
-<li>设置 height</li>
-<li>设置 text-align:</li>
+<li>php 是区分大小写的</li>
+<li>不能以数字开头</li>
 </ul>
 </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">div &#123;</div><div class="line"></div><div class="line">width: 200px;</div><div class="line">height: 80px;</div><div class="line">background: pink;</div><div class="line">text-align: center;</div><div class="line">line-height: 80px;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>3.选择属性:</li>
-</ul>
-<p>(1)标签选中input</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">input&#123;</div><div class="line">border:10px solid red;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p> (2).E[属性名] 含有某属性的元素</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">input[name] &#123;</div><div class="line">background: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>(3)E[属性名=值] 某属性=某值的元素</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">input[name=username] &#123;</div><div class="line">background: yellow;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>4.伪类选择器:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">li:first-child &#123;</div><div class="line">        border: 1px solid orange;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    li:last-child &#123;</div><div class="line">        border: 1px solid red;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    li:nth-child(3) &#123;</div><div class="line">        border: 1px solid pink;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>5.伪对象选择器</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">p::before&#123;</div><div class="line">content:&quot;O(∩_∩)O哈哈~&quot; ;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">p::after&#123;</div><div class="line">    content:&quot;!!!&quot;;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>6.设置 min-height 当宽度超出时候,会自动帮你增加高度</li>
-</ul>
-<p>注意:摆放位置一定在内容的下面—先分清楚需求再去做</p>
-<ul>
-<li>7.去除最后一个伪类选择器样式:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">article:last-child &#123;</div><div class="line">border:1px solide blue; margin-bottom: 0px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>下面场景可能会用到的地方是:最后一个不是他的子类,就需要这个来</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">article:last-of-type &#123;</div><div class="line">border: 1px solid blue; margin-bottom: 0px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>8.保证每一个浏览器都可以使用,使用下面一套字体</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"></div><div class="line">@font-face &#123;</div><div class="line">font-family: &apos;FontAwesome&apos;;</div><div class="line">src: url(&apos;../fonts/fontawesome-webfont.eot?v=4.3.0&apos;);</div><div class="line">src: url(&apos;../fonts/fontawesome-webfont.eot?#iefix&amp;v=4.3.0&apos;) format(&apos;embedded-opentype&apos;), url(&apos;../fonts/fontawesome-webfont.woff2?v=4.3.0&apos;) format(&apos;woff2&apos;),</div><div class="line"></div><div class="line">url(&apos;../fonts/fontawesome-webfont.woff?v=4.3.0&apos;) format(&apos;woff&apos;), url(&apos;../fonts/fontawesome-webfont.ttf?v=4.3.0&apos;) format(&apos;truetype&apos;), url(&apos;../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular&apos;) format(&apos;svg&apos;);</div><div class="line"></div><div class="line">font-weight: normal; font-style: normal; &#125;</div></pre></td></tr></table></figure>
-<h3 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h3><p>要做就做好,这样才会有结果;不认真做注定是半途而废</p>
+<li><p>基本算数运算:与 c 基本相同</p>
+<blockquote>
+<p>+,-,*, /,%</p>
+</blockquote>
+</li>
+<li><p>比较运算符:</p>
+<blockquote>
+<p>>=,&lt;,&lt;=,==,!=,===,!==</p>
+<p>== 只验证值是否相等</p>
+<p>===要求变量类型相等,且值也要相等;</p>
+</blockquote>
+</li>
+<li><p>逻辑运算符:</p>
+<blockquote>
+<p>基本运算:&amp;&amp;(并且) ||(或者)—与 c 一致</p>
+</blockquote>
+</li>
+<li><p>字符串拼接:</p>
+<blockquote>
+<p>字符串并不可以用逗号拼接的</p>
+<p>大串字符串拼接:heredoc/nowdoc</p>
+<p>更多字符串的用法,等用到的时候再去了解;</p>
+</blockquote>
+</li>
+<li><p>数组:</p>
+<blockquote>
+<p>数组不同于我们概念中的数组,他的数组有点像字典,里面都是有 key 的;有自己定义的 key; 或者是0,1,2等对应的字符串</p>
+</blockquote>
+</li>
+<li><p>遍历用 foreach 进行操作</p>
+</li>
+<li><p>函数:和 c 函数定义不一样,不需要写返回值;</p>
+</li>
+<li><p>超全局变量:特殊的数组,往后会经常用到</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$_GET // 地址栏上获得的值</div><div class="line">$_POST // POST 表单发送的数据</div><div class="line">$_REQUEST // 既有 GET,也有 POST 的内容(GET和POST的并集)</div><div class="line"></div><div class="line">后面会学到以下三个 $_SESSION</div><div class="line">$_COOKIE</div><div class="line">$_FILES</div><div class="line"></div><div class="line">$_SERVER //web服务器的环境</div><div class="line">$_ENV // 服务器操作系统的环境变量,如操作系统型,linux,win,mac,环境变量等等</div><div class="line"></div><div class="line">$GLOBALS //引用全局作用域中可用的全部变量</div></pre></td></tr></table></figure>
+</li>
+<li><p>时间戳:以后用到的时候再去用,</p>
+</li>
+<li><p>其实 php 是嵌入到 html 中的一种格式</p>
+</li>
+<li><p>php 基本设置:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">zend studio 可以使用 cmd + r 运行,注意使用的时候,一定要选择正确的网址,而且编译的时候,会-在 zend studio 自带的浏览器中展示编译的结果</div></pre></td></tr></table></figure>
+</li>
+<li><p>php查看版本信息</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">echo phpinfo();</div></pre></td></tr></table></figure>
+</li>
+<li><p>注意 php 版本,一般建议是5+版本,不要使用7+版本</p>
+</li>
+<li><p>html 知识</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">派生类选择器</div><div class="line">li &#123;&#125;  p&#123;&#125;</div><div class="line"></div><div class="line">类选择器</div><div class="line">.main</div><div class="line"></div><div class="line">id 选择器</div><div class="line">#left-content</div></pre></td></tr></table></figure></li>
+</ol>
 
       
     </div>
@@ -355,17 +367,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/08/html学习笔记2/" rel="next" title="html学习笔记2">
-                <i class="fa fa-chevron-left"></i> html学习笔记2
+              <a href="/2016/10/09/html学习笔记4/" rel="next" title="html学习笔记4">
+                <i class="fa fa-chevron-left"></i> html学习笔记4
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/09/html学习笔记4/" rel="prev" title="html学习笔记4">
-                html学习笔记4 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -391,8 +399,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/09/html学习笔记3/"
-           data-title="html学习笔记3" data-url="https://xeroxmx.github.io/2016/09/10/hello-world/2016/10/09/html学习笔记3/">
+      <div class="ds-thread" data-thread-key="2016/10/12/php学习笔记01/"
+           data-title="php学习笔记01" data-url="https://xeroxmx.github.io/2016/09/10/hello-world/2016/10/12/php学习笔记01/">
       </div>
     
   </div>
@@ -476,7 +484,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#web-总结"><span class="nav-number">1.</span> <span class="nav-text">web 总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#感悟"><span class="nav-number">2.</span> <span class="nav-text">感悟</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#php基础语法"><span class="nav-number">1.</span> <span class="nav-text">php基础语法</span></a></li></ol></div>
             
           </div>
         </section>
